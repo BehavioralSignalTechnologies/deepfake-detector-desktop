@@ -26,13 +26,32 @@ The app captures your system audio and streams it to Behavioral Signals' AI deep
 | macOS 14.2+ | [Latest release](../../releases/latest) — DMG (Apple Silicon or Intel) |
 | Linux | [Latest release](../../releases/latest) — deb, AppImage or Flatpak |
 
+## Install
+
+### Windows
+
+Windows 10 (build 19041) or later is required for system-audio capture.
+
+- **Microsoft Store (recommended):** install from the [Store page](https://apps.microsoft.com/detail/9pmt49gcwjbj) — updates are handled automatically.
+- **Installer:** download `DeepfakeDetector-Setup-<version>.exe` from the [latest release](../../releases/latest) and run it. If Microsoft Defender SmartScreen warns about an unrecognized app, click *More info* → *Run anyway*.
+- **Portable:** download `DeepfakeDetector-<version>.exe` and run it directly — no installation.
+
+### macOS
+
+macOS 14.2 (Sonoma) or later is required for system-audio capture (Core Audio Taps).
+
+1. Download the DMG for your CPU from the [latest release](../../releases/latest): `DeepfakeDetector-<version>-arm64.dmg` for Apple Silicon (M-series), `DeepfakeDetector-<version>.dmg` for Intel.
+2. Open the DMG and drag **DeepfakeDetector** into **Applications**.
+3. If macOS blocks the first launch, right-click the app → *Open* (or allow it under *System Settings → Privacy & Security → Open Anyway*).
+4. On first recording the app asks for permission to capture system audio — accept it.
+
 ### Linux
+
+PulseAudio or PipeWire (`pipewire-pulse`) is required for system-audio capture.
 
 - **Deb** (Debian/Ubuntu): `sudo apt install ./behavioral-signals-deepfake-detector_<version>_amd64.deb`
 - **AppImage**: make it executable (`chmod +x`) and run. Requires FUSE.
-- **Flatpak**: `flatpak install --user DeepfakeDetector-<version>-x86_64.flatpak`, then `flatpak run com.behavioralsignals.DeepfakeDetector`
-
-Linux requires PulseAudio or PipeWire (`pipewire-pulse`) for system-audio capture.
+- **Flatpak**: `flatpak install --user DeepfakeDetector-<version>-x86_64.flatpak`, then run with `flatpak run com.behavioralsignals.DeepfakeDetector`
 
 > **Note (Wayland):** Wayland does not let applications keep a window always on top. If the
 > floating bar gets covered by other windows, set it manually through the window menu
