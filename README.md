@@ -22,7 +22,8 @@ The app captures your system audio and streams it to Behavioral Signals' AI deep
 
 | Platform | Where |
 |----------|-------|
-| Windows 10/11 | [Microsoft Store](https://apps.microsoft.com/detail/9pmt49gcwjbj) |
+| Windows 10/11 | [Microsoft Store](https://apps.microsoft.com/detail/9pmt49gcwjbj) (recommended), or installer / portable exe from the [latest release](../../releases/latest) |
+| macOS 14.2+ | [Latest release](../../releases/latest) — DMG (Apple Silicon or Intel) |
 | Linux | [Latest release](../../releases/latest) — deb, AppImage or Flatpak |
 
 ### Linux
