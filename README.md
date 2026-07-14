@@ -49,7 +49,7 @@ macOS 14.2 (Sonoma) or later is required for system-audio capture (Core Audio Ta
 
 PulseAudio or PipeWire (`pipewire-pulse`) is required for system-audio capture.
 
-- **Deb** (Debian/Ubuntu): `sudo apt install ./behavioral-signals-deepfake-detector_<version>_amd64.deb`
+- **Deb** (Debian/Ubuntu): `sudo apt install ./DeepfakeDetector-<version>-amd64.deb`
 - **AppImage**: make it executable (`chmod +x`) and run. Requires FUSE.
 - **Flatpak**: `flatpak install --user DeepfakeDetector-<version>-x86_64.flatpak`, then run with `flatpak run com.behavioralsignals.DeepfakeDetector`
 
